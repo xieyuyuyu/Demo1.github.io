@@ -1,0 +1,35 @@
+//nav bar for mobile
+nav {
+    background-color: darkcyan;
+    width: 100%;
+    top: 0%;
+    position: relative;
+    margin-bottom: 25px;
+
+    .foldButton {
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+    }
+    .expandListUl {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: darkcyan;
+        a {
+            text-decoration: none;
+            list-style: none;
+            li {
+                display: block;
+                color: white;
+                padding: 1rem 0;
+                &:hover {
+                    background-color: firebrick;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+    }
+}

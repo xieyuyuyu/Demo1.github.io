@@ -1,0 +1,40 @@
+/*使用CSS Reset来统一你的网站样式*/
+在这里下载normalize.css文件: https://necolas.github.io/normalize.css/
+    -每个浏览器都有自己的默认css样表，而且样式规格都不统一，这就让前端制作者非常头疼;
+    -于是人们创造了normalize.css文件，并传于世间，解救程序员于水深火热之中;
+    -在每次开始新的网站项目之前，请将normalize.css链接到你的HTML中，这样，你的网页就能在每个浏览器上都有统一的样式;
+
+
+/*关于全局设置*/
+建议在每个CSS文件的开头，写上如下规则：
+
+* {         
+ box-sizing: border-box;     /*可以让外边距和内边距不影响实际box的尺寸，让网页元素的尺寸更好掌控*/
+    list-style: none;        /*去掉ul和ol元素中，li左侧的小圆点*/
+    text-decoration: none;  /*去掉<a>标签的默认下划线*/
+}
+
+/*关于flex box*/
+display:flex  是一种最新的css布局方法，强烈推荐大家学习及使用
+但是由于功能比较新，最好先在https://caniuse.com/ 查询浏览器支持情况
+关于flex box的一切使用方法，可以参考: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+本节课我们用到的flex属性有：
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+/*关于网页的选色：*/
+    -网页配色博大精深，也是专业设计师的一大课题；
+    -对于新手来说，推荐这个网站： http://colorschemedesigner.com/csd-3.5/
+    -在网站中通过选择一个颜色，可以生成一组可以互相搭配使用的颜色，支持的色彩组合有：单色，互补色，三角色，四角色，相邻色，强调形相邻色
+
+
+/*关于媒体查询*/
+'移动优先'媒体查询的语法：
+@media (min-width: 700px) {  /*700px仅仅是例子，具体参数每个网页不一样*/   /*min-width是 最小宽度 的意思*/  
+    
+}
+
+'在媒体查询的大括号{}中书写的CSS规则，只有在满足上方小括号()中的条件判断之后，方能生效'

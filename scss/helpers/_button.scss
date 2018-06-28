@@ -1,0 +1,23 @@
+button {
+    padding: 1em;
+    border: none;
+    color: white;
+    border-radius: 45px;
+    &:hover {
+        color: #d77377;
+        cursor: pointer;
+    }
+}
+
+#scrollTop {
+    width: 120px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: -25px;
+    &:hover {
+        color: #d77377;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
